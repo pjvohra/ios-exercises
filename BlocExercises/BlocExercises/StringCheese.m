@@ -27,6 +27,6 @@
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     NSString *cheeseString = (cheeseCount == 1 ? @"cheese" : @"cheeses");
-    return [NSString stringWithFormat:@"%d %@", cheeseCount, cheeseString];
+    return [NSString stringWithFormat:@"%lu %@", (unsigned long)cheeseCount, cheeseString];
 }
 @end
